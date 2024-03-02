@@ -65,7 +65,7 @@ function RulerMarker({ position, length }) {
       })}
     >
       <Tooltip permanent offset={[10, 0]} direction="right">
-        {length.toFixed(3, 10)} KM
+        {length.toFixed(3)} KM
       </Tooltip>
     </Marker>
   );
