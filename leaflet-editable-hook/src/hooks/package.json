@@ -1,0 +1,29 @@
+{
+  "name": "leaflet-editable-hook",
+  "version": "1.0.1",
+  "description": "The purpose of this hook is to provide functionality for editing features on the map, such as drawing polylines, polygons, markers, rectangles, circles, and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "leaflet": "^1.9.4",
+    "leaflet-editable": "^1.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroRM-DEV/leaflet-editable-hook.git"
+  },
+  "keywords": [
+    "leaflet"
+  ],
+  "author": "Alejandro Ramírez Muñoz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlejandroRM-DEV/leaflet-editable-hook/issues"
+  },
+  "homepage": "https://github.com/AlejandroRM-DEV/leaflet-editable-hook#readme"
+}
