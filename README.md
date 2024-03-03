@@ -11,7 +11,7 @@ https://leaflet-editable-hook.vercel.app/
 
 ## Installation
 
-Install my-project with npm
+Install with npm
 
 ```bash
   npm i leaflet-editable-hook
