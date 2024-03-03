@@ -2,6 +2,7 @@ import L from 'leaflet';
 import 'leaflet-editable';
 import { MapContainer, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
+import { Analytics } from '@vercel/analytics/react';
 import ControlBar from './ControlBar';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         />
         <ControlBar />
       </MapContainer>
+      <Analytics />
     </div>
   );
 }
