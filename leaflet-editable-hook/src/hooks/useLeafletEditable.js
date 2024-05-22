@@ -1,14 +1,6 @@
-import { useMemo, useCallback, useEffect } from "react";
-import {
-  Polyline,
-  Marker,
-  Polygon,
-  Circle,
-  Rectangle,
-  CircleMarker,
-  LayerEvent,
-  LeafletMouseEvent,
-} from "leaflet";
+import { useCallback, useEffect } from "react";
+import "leaflet-editable";
+import { Polyline, Marker, Polygon, Circle, Rectangle } from "leaflet";
 import { useMap } from "react-leaflet";
 
 const eventHandlers = Object.freeze({
@@ -48,55 +40,11 @@ const eventHandlers = Object.freeze({
   onShapeDeleted: "editable:shape:deleted",
 });
 
-// Define the types for the events object
-type LeafletEditableEventHandlers = {
-  onCreated?: (e: LayerEvent) => void;
-  onEnable?: (e: LayerEvent) => void;
-  onDisable?: (e: LayerEvent) => void;
-  onEditing?: (e: LayerEvent) => void;
-  onDragStart?: (e: LayerEvent) => void;
-  onDrag?: (e: LayerEvent) => void;
-  onDragEnd?: (e: LayerEvent) => void;
-  onDrawingStart?: (e: LayerEvent) => void;
-  onDrawingEnd?: (e: LayerEvent) => void;
-  onDrawingCancel?: (e: LayerEvent) => void;
-  onDrawingCommit?: (e: LayerEvent) => void;
-  onDrawingMousedown?: (e: LayerEvent) => void;
-  onDrawingMouseup?: (e: LayerEvent) => void;
-  onDrawingClick?: (e: LayerEvent) => void;
-  onDrawingMove?: (e: LayerEvent) => void;
-  onDrawingClicked?: (e: LayerEvent) => void;
-  onVertexNew?: (e: LayerEvent) => void;
-  onVertexClick?: (e: LayerEvent) => void;
-  onVertexClicked?: (e: LayerEvent) => void;
-  onVertexRawclick?: (e: LayerEvent) => void;
-  onVertexDeleted?: (e: LayerEvent) => void;
-  onVertexCtrlclick?: (e: LayerEvent) => void;
-  onVertexShiftclick?: (e: LayerEvent) => void;
-  onVertexMetakeyclick?: (e: LayerEvent) => void;
-  onVertexAltclick?: (e: LayerEvent) => void;
-  onVertexContextmenu?: (e: LayerEvent) => void;
-  onVertexMousedown?: (e: LayerEvent) => void;
-  onVertexDrag?: (e: LayerEvent) => void;
-  onVertexDragstart?: (e: LayerEvent) => void;
-  onVertexDragend?: (e: LayerEvent) => void;
-  onMiddlemarkerMousedown?: (e: LayerEvent) => void;
-  onShapeNew?: (e: LayerEvent) => void;
-  onShapeDelete?: (e: LayerEvent) => void;
-  onShapeDeleted?: (e: LayerEvent) => void;
-};
-
-interface UseLeafletEditableOptions {
-  events: LeafletEditableEventHandlers;
-}
-
-function useLeafletEditable({ events }: UseLeafletEditableOptions) {
+function useLeafletEditable({ events }) {
   const map = useMap();
 
   useEffect(() => {
-    const keys = Object.keys(eventHandlers) as Array<
-      keyof typeof eventHandlers
-    >;
+    const keys = Object.keys(eventHandlers);
     keys.forEach((key) => {
       const handler = events[key];
       if (handler) {
@@ -113,62 +61,63 @@ function useLeafletEditable({ events }: UseLeafletEditableOptions) {
       });
     };
   }, [map, events]);
-  const drawing = useMemo(() => map.editTools.drawing(), [map]);
+
+  const drawing = useCallback(() => map.editTools.drawing(), [map]);
 
   const stopDrawing = useCallback(() => map.editTools.stopDrawing(), [map]);
 
   const commitDrawing = useCallback(
-    (e: LeafletMouseEvent) => map.editTools.commitDrawing(e),
+    (event) => map.editTools.commitDrawing(event),
     [map],
   );
 
   const startPolyline = useCallback(
-    (latlng, options) => map.editTools.startPolyline(latlng, options),
+    (latLng, options) => map.editTools.startPolyline(latLng, options),
     [map],
   );
 
   const startPolygon = useCallback(
-    (latlng, options) => map.editTools.startPolygon(latlng, options),
+    (latLng, options) => map.editTools.startPolygon(latLng, options),
     [map],
   );
 
   const startMarker = useCallback(
-    (latlng, options) => map.editTools.startMarker(latlng, options),
+    (latLng, options) => map.editTools.startMarker(latLng, options),
     [map],
   );
 
   const startRectangle = useCallback(
-    (latlng, options) => map.editTools.startRectangle(latlng, options),
+    (latLng, options) => map.editTools.startRectangle(latLng, options),
     [map],
   );
 
   const startCircle = useCallback(
-    (latlng, options) => map.editTools.startCircle(latlng, options),
+    (latLng, options) => map.editTools.startCircle(latLng, options),
     [map],
   );
 
   const clearAll = useCallback(() => map.editTools.clearLayers(), [map]);
 
   // BaseEditor related methods
-  const enableEditing = useCallback(
-    (feature: L.Layer) => {
+  const enableEdit = useCallback(
+    (feature) => {
       if (
         feature instanceof Marker ||
         feature instanceof Polyline ||
         feature instanceof Polygon ||
         feature instanceof Rectangle ||
-        feature instanceof Circle ||
-        feature instanceof CircleMarker
+        feature instanceof Circle
       ) {
-        //console.log(feature);
         feature.enableEdit();
+      } else {
+        console.error("Feature is not editable", feature);
       }
     },
     [map],
   );
 
-  const disableEditing = useCallback(
-    (feature: L.Layer) => {
+  const disableEdit = useCallback(
+    (feature) => {
       if (
         feature instanceof Marker ||
         feature instanceof Polyline ||
@@ -177,6 +126,8 @@ function useLeafletEditable({ events }: UseLeafletEditableOptions) {
         feature instanceof Circle
       ) {
         feature.disableEdit();
+      } else {
+        console.error("Feature is not editable", feature);
       }
     },
     [map],
@@ -192,8 +143,8 @@ function useLeafletEditable({ events }: UseLeafletEditableOptions) {
     startRectangle,
     startCircle,
     clearAll,
-    enableEditing,
-    disableEditing,
+    enableEdit,
+    disableEdit,
   };
 }
 
