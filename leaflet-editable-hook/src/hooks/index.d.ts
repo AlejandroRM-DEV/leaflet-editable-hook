@@ -1,5 +1,4 @@
 // useLeafletEditable.d.ts
-import "leaflet-editable";
 import {
   Layer,
   LayerEventHandlerFn,
