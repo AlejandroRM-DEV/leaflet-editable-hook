@@ -24,13 +24,15 @@ Install with npm
 | Hook returned methods                               | Returns     | Description                                                                                                                                                           |
 |---------------------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | drawing()                             | boolean     | Return true if any drawing action is ongoing.                                                                                                                         |
-| stopDrawing()                         |             | When you need to stop any ongoing drawing, without needing to know which editor is active.                                                                           |
-| commitDrawing()                       |             | When you need to commit any ongoing drawing, without needing to know which editor is active.                                                                         |
+| stopDrawing()                         |    void         | When you need to stop any ongoing drawing, without needing to know which editor is active.                                                                           |
+| commitDrawing()                       |     void        | When you need to commit any ongoing drawing, without needing to know which editor is active.                                                                         |
 | startPolyline(<L.LatLng> latlng, <hash> options) | L.Polyline  | Start drawing a Polyline. If latlng is given, a first point will be added. In any case, continuing on user click. If options is given, it will be passed to the Polyline class constructor. |
 | startPolygon(<L.LatLng> latlng, <hash> options)  | L.Polygon   | Start drawing a Polygon. If latlng is given, a first point will be added. In any case, continuing on user click. If options is given, it will be passed to the Polygon class constructor.  |
 | startMarker(<L.LatLng> latlng, <hash> options)  | L.Marker    | Start adding a Marker. If latlng is given, the Marker will be shown first at this point. In any case, it will follow the user mouse, and will have a final latlng on next click (or touch). If options is given, it will be passed to the Marker class constructor. |
 | startRectangle(<L.LatLng> latlng, <hash> options) | L.Rectangle | Start drawing a Rectangle. If latlng is given, the Rectangle anchor will be added. In any case, continuing on user drag. If options is given, it will be passed to the Rectangle class constructor. |
 | startCircle(<L.LatLng> latlng, <hash> options)    | L.Circle    | Start drawing a Circle. If latlng is given, the Circle anchor will be added. In any case, continuing on user drag. If options is given, it will be passed to the Circle class constructor.    |
+| enableEdit(feature: L.Layer)    | void    | Enable editing, by creating an editor if not existing, and then calling enable on it.   |
+| disableEdit(feature: L.Layer)    | void    | Disable editing, also remove the editor property reference.    |
 
 
 | Events                 |
@@ -39,9 +41,9 @@ Install with npm
 | onEnable               |
 | onDisable              |
 | onEditing              |
-| onDragstart            |
+| onDragStart            |
 | onDrag                 |
-| onDragend              |
+| onDragEnd              |
 | onDrawingStart         |
 | onDrawingEnd           |
 | onDrawingCancel        |
