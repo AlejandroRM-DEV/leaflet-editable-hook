@@ -1,5 +1,4 @@
 import { useCallback, useEffect } from "react";
-import "leaflet-editable";
 import { Polyline, Marker, Polygon, Circle, Rectangle } from "leaflet";
 import { useMap } from "react-leaflet";
 
