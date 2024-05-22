@@ -1,4 +1,3 @@
-// useLeafletEditable.d.ts
 import {
   Layer,
   LayerEventHandlerFn,
@@ -9,7 +8,6 @@ import {
   Editable,
 } from "leaflet";
 
-// Type definitions for event handlers used by the useLeafletEditable hook
 export interface LeafletEditableEventHandlers {
   onCreated?: LayerEventHandlerFn;
   onEnable?: LeafletEventHandlerFn;
