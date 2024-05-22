@@ -1,35 +1,29 @@
 {
   "name": "leaflet-editable-hook",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.2.0",
+  "description": "The purpose of this hook is to provide functionality for editing features on the map, such as drawing polylines, polygons, markers, rectangles, circles, and more.",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "@turf/turf": "^6.5.0",
-    "@vercel/analytics": "^1.2.2",
-    "antd": "^5.15.0",
+  "peerDependencies": {
     "leaflet": "^1.9.4",
     "leaflet-editable": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1",
-    "react-leaflet": "^4.2.1",
-    "react-leaflet-custom-control": "^1.4.0"
+    "react-leaflet": "^4.2.1"
   },
-  "devDependencies": {
-    "@types/react": "^18.2.56",
-    "@types/react-dom": "^18.2.19",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "prettier": "^3.2.5",
-    "vite": "^5.1.4"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroRM-DEV/leaflet-editable-hook.git"
+  },
+  "keywords": [
+    "leaflet"
+  ],
+  "author": "Alejandro Ramírez Muñoz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlejandroRM-DEV/leaflet-editable-hook/issues"
+  },
+  "homepage": "https://github.com/AlejandroRM-DEV/leaflet-editable-hook#readme"
 }

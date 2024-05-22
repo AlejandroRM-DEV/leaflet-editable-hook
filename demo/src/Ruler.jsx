@@ -1,7 +1,7 @@
 import { useMap, Marker, Tooltip } from 'react-leaflet';
 import { useState, useEffect } from 'react';
 import * as turf from '@turf/turf';
-import { useLeafletEditable } from './hooks';
+import { useLeafletEditable } from 'leaflet-editable-hook';
 
 function Ruler() {
   const map = useMap();
