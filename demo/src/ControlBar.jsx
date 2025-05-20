@@ -1,6 +1,6 @@
 import { FaDraftingCompass } from 'react-icons/fa';
 import { Button } from 'antd';
-import Control from 'react-leaflet-custom-control';
+import Control from './Control';
 import { TfiRulerAlt2 } from 'react-icons/tfi';
 import { useState } from 'react';
 import Area from './Area';
