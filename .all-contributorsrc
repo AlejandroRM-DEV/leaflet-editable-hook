@@ -8,6 +8,15 @@
   "commitConvention": "angular",
   "contributors": [
     {
+      "login": "AlejandroRM-DEV",
+      "name": "Alejandro Ramírez Muñoz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8054357?v=4",
+      "profile": "https://github.com/AlejandroRM-DEV",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
       "login": "charlieforward9",
       "name": "Charles Richardson",
       "avatar_url": "https://avatars.githubusercontent.com/u/62311337?v=4",
@@ -21,15 +30,6 @@
       "name": "saiNaruUFL",
       "avatar_url": "https://avatars.githubusercontent.com/u/110858892?v=4",
       "profile": "https://github.com/saiNaruUFL",
-      "contributions": [
-        "code"
-      ]
-    },
-    {
-      "login": "AlejandroRM-DEV",
-      "name": "Alejandro Ramírez Muñoz",
-      "avatar_url": "https://avatars.githubusercontent.com/u/8054357?v=4",
-      "profile": "https://github.com/AlejandroRM-DEV",
       "contributions": [
         "code"
       ]
