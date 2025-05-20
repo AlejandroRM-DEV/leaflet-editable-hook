@@ -3,29 +3,29 @@
   "version": "1.4.0",
   "description": "The purpose of this hook is to provide functionality for editing features on the map, such as drawing polylines, polygons, markers, rectangles, circles, and more.",
   "main": "index.js",
+  "keywords": [
+    "leaflet"
+  ],
+  "author": "Alejandro Ramírez Muñoz",
+  "license": "MIT",
+  "homepage": "https://github.com/AlejandroRM-DEV/leaflet-editable-hook#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejandroRM-DEV/leaflet-editable-hook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlejandroRM-DEV/leaflet-editable-hook/issues"
+  },
   "scripts": {
     "release": "release-it"
   },
   "peerDependencies": {
     "leaflet": "^1.9.4",
     "leaflet-editable": "^1.2.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-leaflet": "^4.2.1"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-leaflet": "^5.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlejandroRM-DEV/leaflet-editable-hook.git"
-  },
-  "keywords": [
-    "leaflet"
-  ],
-  "author": "Alejandro Ramírez Muñoz",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AlejandroRM-DEV/leaflet-editable-hook/issues"
-  },
-  "homepage": "https://github.com/AlejandroRM-DEV/leaflet-editable-hook#readme",
   "devDependencies": {
     "@release-it/conventional-changelog": "^10.0.1",
     "release-it": "^19.0.2"
