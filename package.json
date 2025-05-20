@@ -1,6 +1,6 @@
 {
   "name": "leaflet-editable-hook",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "The purpose of this hook is to provide functionality for editing features on the map, such as drawing polylines, polygons, markers, rectangles, circles, and more.",
   "main": "index.js",
   "scripts": {
