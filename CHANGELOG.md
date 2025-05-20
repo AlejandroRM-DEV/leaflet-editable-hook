@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.1](https://github.com/AlejandroRM-DEV/leaflet-editable-hook/compare/2.0.0...2.0.1) (2025-05-20)
+
+### Miscellaneous Chores
+
+* :clown_face: Update demo with latest version [skip ci] ([#16](https://github.com/AlejandroRM-DEV/leaflet-editable-hook/issues/16)) ([6dd6aca](https://github.com/AlejandroRM-DEV/leaflet-editable-hook/commit/6dd6aca99064991d0d9834ff9180a7e80743b4b9))
+
 ## [2.0.0](https://github.com/AlejandroRM-DEV/leaflet-editable-hook/compare/1.4.0...2.0.0) (2025-05-20)
 
 ### ⚠ BREAKING CHANGES
