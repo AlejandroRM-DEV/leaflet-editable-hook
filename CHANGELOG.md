@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.0.2](https://github.com/AlejandroRM-DEV/leaflet-editable-hook/compare/2.0.1...2.0.2) (2025-05-20)
+
+### Bug Fixes
+
+* :pencil2: Fixes npm ignore ([2d086c4](https://github.com/AlejandroRM-DEV/leaflet-editable-hook/commit/2d086c4666804d04035868a0368cf31f64dffd63))
+
 ## [2.0.1](https://github.com/AlejandroRM-DEV/leaflet-editable-hook/compare/2.0.0...2.0.1) (2025-05-20)
 
 ### Miscellaneous Chores
