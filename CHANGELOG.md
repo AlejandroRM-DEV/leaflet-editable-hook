@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.0.0](https://github.com/AlejandroRM-DEV/leaflet-editable-hook/compare/1.4.0...2.0.0) (2025-05-20)
+
+### ⚠ BREAKING CHANGES
+
+* React 19 and React Leaflet 5
+
+### Bug Fixes
+
+* :green_heart: Fix package-lock.json ([c48023d](https://github.com/AlejandroRM-DEV/leaflet-editable-hook/commit/c48023d92f549348a7bfaf7defd026828e97caad))
+
+### Build System
+
+* :boom: React 19 and React Leaflet as peer dependencies ([#14](https://github.com/AlejandroRM-DEV/leaflet-editable-hook/issues/14)) ([15cfb1b](https://github.com/AlejandroRM-DEV/leaflet-editable-hook/commit/15cfb1b39a0015f2ad11b0b4a4edb2cecdaeeb0d))
+
 ## 1.4.0 (2025-05-20)
 
 ### Features
