@@ -4,7 +4,7 @@
   "description": "The purpose of this hook is to provide functionality for editing features on the map, such as drawing polylines, polygons, markers, rectangles, circles, and more.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "release-it"
   },
   "peerDependencies": {
     "leaflet": "^1.9.4",
@@ -25,5 +25,13 @@
   "bugs": {
     "url": "https://github.com/AlejandroRM-DEV/leaflet-editable-hook/issues"
   },
-  "homepage": "https://github.com/AlejandroRM-DEV/leaflet-editable-hook#readme"
+  "homepage": "https://github.com/AlejandroRM-DEV/leaflet-editable-hook#readme",
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^10.0.1",
+    "release-it": "^19.0.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
