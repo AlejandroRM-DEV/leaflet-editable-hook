@@ -1,6 +1,6 @@
 # Leaflet Editable Hook
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 The purpose of this hook is to provide functionality for editing features on the map, such as drawing polylines, polygons, markers, rectangles, circles, and more.
 
@@ -173,6 +173,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/charlieforward9"><img src="https://avatars.githubusercontent.com/u/62311337?v=4?s=100" width="100px;" alt="Charles Richardson"/><br /><sub><b>Charles Richardson</b></sub></a><br /><a href="https://github.com/AlejandroRM-DEV/leaflet-editable-hook/commits?author=charlieforward9" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/saiNaruUFL"><img src="https://avatars.githubusercontent.com/u/110858892?v=4?s=100" width="100px;" alt="saiNaruUFL"/><br /><sub><b>saiNaruUFL</b></sub></a><br /><a href="https://github.com/AlejandroRM-DEV/leaflet-editable-hook/commits?author=saiNaruUFL" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/AlejandroRM-DEV"><img src="https://avatars.githubusercontent.com/u/8054357?v=4?s=100" width="100px;" alt="Alejandro Ramírez Muñoz"/><br /><sub><b>Alejandro Ramírez Muñoz</b></sub></a><br /><a href="https://github.com/AlejandroRM-DEV/leaflet-editable-hook/commits?author=AlejandroRM-DEV" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
